@@ -202,25 +202,21 @@ img{
   
   @media ( max-width: 500px ) {  
     article { 
-          grid-template-areas: " column-1" ;
+        grid-template-areas: " column-1" ;
      }
-
 
      .left{
         align-items: auto;
      }
 
+
   }
   
   /* non-essential decorative styles */
   .module {
-    border: 1px solid gray;
-    background-color: lightgreen;
+    background-color: #573C33;
     display: inline-block;
   }
   .module:nth-child(2) {
-    background-color: orange;
+    background-color:#E7E0D8;
   }
-
-
-
