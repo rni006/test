@@ -1,4 +1,10 @@
-/*Wiw's navigation*/
+
+body{
+    margin:0;
+    font-family: 'orange_kidregular';
+}
+
+/* Navigation styles start */
 
 ul {
     list-style-type:none;
@@ -86,7 +92,7 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 /*Responsive Styles*/
-@media screen and (max-width : 760px){
+@media screen and (max-width : 736px){
     /*Make dropdown links appear inline*/
     ul {
         position: static;
@@ -105,9 +111,8 @@ input[type=checkbox]:checked ~ #menu{
         display:block;
     }
 }
-
-
-/* Dan-kun */
+  
+/* Dan-kun font*/
 
 h1 {
     font-family: 'manaspaceregular';
@@ -155,68 +160,133 @@ p {
     font-style: normal;
 }
 
+*{
+    margin:0;
+    padding: 0;
+}
 
+/* THIS is HOW ITS GONna LOOK ON THE PHONE */ 
 
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr; 
+    grid-template-rows: auto 1fr 1fr 1fr auto; /* auto fits the content */
+    grid-template-areas: 
+    "header header"
+    "sidebar sidebar"
+    "content content"
+    "sidebar2 sidebar2"
+    "content2 content2"
+    "sidebar3 sidebar3"
+    "content3 content3"
+    "footer footer"; 
+}
 
-/* duhfdhfkjsdhfkjhfkshfksjdfhsjkfhdkjfhsjkdf */
+.header{
+    grid-area: header;
+    padding-bottom: 9em;
+}
 
-body{
+.sidebar{
+    grid-area: sidebar;
+}
+
+.content{
+    grid-area: content;
+}
+
+.sidebar2{
+    grid-area: sidebar2;
+}  
+
+.content2{
+    grid-area: content2;
+}
+
+.sidebar3{
+    grid-area: sidebar3;
+}
+
+.content3{
+    grid-area: content3;
+}
+
+.sidebar,
+.sidebar2,
+.sidebar3{
+    align-content: center;
     margin:0;
 }
 
-article {
-    display: grid;
-  
-    grid-auto-rows: flex; /* for demo */
-    grid-template-areas: "column-1";
-  }
-  
-  .module:nth-child(1) { grid-area: column-1; }
-
-
-  .right { 
-    display:table-cell; 
-    vertical-align:middle; 
-    width:auto; 
-    margin:0; 
-    padding:0;   
-    background-size:100%; 
-    padding-right: 15%;
+.content,
+.content2,
+.content3{
+    margin: 0;
+    justify-items: start;
 }
 
-.left { 
-    display:table-cell; 
-    vertical-align:inline-block; 
-    width:auto; 
-    padding-left:15%; 
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-right: 0;
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+
+.grid div:nth-child(1){
+    background-color:burlywood;
+}
+
+.grid div:nth-child(2){
+    background-color:burlywood;
+}
+.grid div:nth-child(3){
+    background-color:burlywood;
+}
+
+.grid div:nth-child(4){
+    background-color: #573C33;
+}
+
+.grid div:nth-child(5){
+    background-color: #573C33;
+}
+
+.grid div:nth-child(6){
+    background-color:burlywood;
+}
+
+.grid div:nth-child(7){
+    background-color:burlywood;
+}
+
+
+.grid div:nth-child(8){
+    background-color:salmon;
+}
+
+/* THIs is HOW ITS GONna LOOK ON THE BIG SCREEN */
+
+@media screen and (min-width: 736px){
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 1,5fr; /* auto fits the content */
+        grid-template-rows: auto 1fr 1fr 1fr auto;
+        grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "sidebar2 content2"
+        "sidebar3 content3"
+        "footer footer"; 
+    }
+
+    .sidebar,
+    .sidebar2,
+    .sidebar3{
+     padding-left: 19%;
+    }
+
 }
 
 img{
     height: 300px;
 }
-  
-  
-  
-  @media ( max-width: 500px ) {  
-    article { 
-        grid-template-areas: " column-1" ;
-     }
-
-     .left{
-        align-items: auto;
-     }
-
-
-  }
-  
-  /* non-essential decorative styles */
-  .module {
-    background-color: #573C33;
-    display: inline-block;
-  }
-  .module:nth-child(2) {
-    background-color:#E7E0D8;
-  }
