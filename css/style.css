@@ -276,15 +276,29 @@ p {
 
     .sidebar,
     .sidebar3{
-        padding-left: 0%;
+        padding-left: 20%;
+    }
+
+    .sidebar2 {
+        padding-right: 20%;
     }
     
-    .sidebar2 {
-        padding-right: 0%;
+    .sidebar, sidebar2, sidebar3 {
+        
     }
 
 }
 
-img{
+img.even {
     height: 300px;
+    background-color: #573C33;
+    border-radius: 50%;
+    margin: 5em;
+}
+
+img.odd {
+    height: 300px;
+    background-color: burlywood;
+    border-radius: 50%;
+    margin: 5em;
 }
