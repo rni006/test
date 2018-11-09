@@ -265,21 +265,14 @@ p {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto fr 1fr 1fr;
         grid-template-areas:
+            "header header header header"
             "sidebar sidebar sidebar content"
             "content2 sidebar2 sidebar2 sidebar2"
             "sidebar3 sidebar3 sidebar3 content3"
             "footer footer footer footer";
     }
-
-    .sidebar { grid-area: sidebar; }
-
-    .content { grid-area: content; }
-
-    .content2 { grid-area: content2; }
-
-    .content3 { grid-area: content3; }
 
     .sidebar,
     .sidebar3{
