@@ -169,7 +169,7 @@ p {
 
 .grid{
     display: grid;
-    grid-template-columns: 2fr 1.5fr; 
+    grid-template-columns: 1.5fr 1fr; 
     grid-template-rows: auto 1fr 1fr 1fr auto; /* auto fits the content */
     grid-template-areas: 
         "header header"
@@ -269,7 +269,7 @@ p {
 @media screen and (min-width: 736px){
     .grid{
         display: grid;
-        grid-template-columns: 2fr 1,5fr; /* auto fits the content */
+        grid-template-columns: 1.5fr 1fr; /* auto fits the content */
         grid-template-rows: auto 1fr 1fr 1fr auto;
         grid-template-areas: 
             "header header"
