@@ -111,7 +111,7 @@ input[type=checkbox]:checked ~ #menu{
         display:block;
     }
 }
-  
+
 /* Dan-kun font*/
 
 h1 {
@@ -129,7 +129,7 @@ p {
 @font-face {
     font-family: 'manaspaceregular';
     src: url('../fonts/manaspc-webfont.woff2') format('woff2'),
-         url('../fonts/manaspc-webfont.woff') format('woff');
+        url('../fonts/manaspc-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -138,7 +138,7 @@ p {
 @font-face {
     font-family: 'manaspaceregular';
     src: url('../fonts/manaspc-webfont.woff2') format('woff2'),
-         url('../fonts/manaspc-webfont.woff') format('woff');
+        url('../fonts/manaspc-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -172,14 +172,14 @@ p {
     grid-template-columns: 2fr 1.5fr; 
     grid-template-rows: auto 1fr 1fr 1fr auto; /* auto fits the content */
     grid-template-areas: 
-    "header header"
-    "sidebar sidebar"
-    "content content"
-    "sidebar2 sidebar2"
-    "content2 content2"
-    "sidebar3 sidebar3"
-    "content3 content3"
-    "footer footer"; 
+        "header header"
+        "sidebar sidebar"
+        "content content"
+        "sidebar2 sidebar2"
+        "content2 content2"
+        "sidebar3 sidebar3"
+        "content3 content3"
+        "footer footer"; 
 }
 
 .header{
@@ -272,17 +272,17 @@ p {
         grid-template-columns: 2fr 1,5fr; /* auto fits the content */
         grid-template-rows: auto 1fr 1fr 1fr auto;
         grid-template-areas: 
-        "header header"
-        "sidebar content"
-        "content2 sidebar2"
-        "sidebar3 content3"
-        "footer footer"; 
+            "header header"
+            "sidebar content"
+            "content2 sidebar2"
+            "sidebar3 content3"
+            "footer footer"; 
     }
 
     .sidebar,
     .sidebar2,
     .sidebar3{
-     padding-left: 19%;
+        padding-left: 19%;
     }
 
 }
