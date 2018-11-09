@@ -274,7 +274,7 @@ p {
         grid-template-areas: 
         "header header"
         "sidebar content"
-        "sidebar2 content2"
+        "content2 sidebar2"
         "sidebar3 content3"
         "footer footer"; 
     }
