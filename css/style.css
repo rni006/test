@@ -303,14 +303,14 @@ p {
 
 img.even {
     height: 300px;
-    background-color: #573C33;
+    background-color: #E7E0D8;
     border-radius: 50%;
     margin: 5em;
 }
 
 img.odd {
     height: 300px;
-    background-color: #E7E0D8
+    background-color: #573C33
 ;
     border-radius: 50%;
     margin: 5em;
