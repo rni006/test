@@ -169,18 +169,25 @@ p {
 
 .grid{
     display: grid;
-    grid-template-columns: 1.5fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: auto 1fr 1fr 1fr auto; /* auto fits the content */
     grid-template-areas: 
-        "header header"
-        "sidebar sidebar"
-        "content content"
-        "sidebar2 sidebar2"
-        "content2 content2"
-        "sidebar3 sidebar3"
-        "content3 content3"
-        "footer footer"; 
+        "header header header header"
+        "sidebar sidebar sidebar sidebar"
+        "content content content content"
+        "sidebar2 sidebar2 sidebar2 sidebar2"
+        "content2 content2 content2 content2"
+        "sidebar3 sidebar3 sidebar3 sidebar3"
+        "content3 content3 content3 content3"
+        "footer footer footer footer"; 
+
 }
+
+.sidebar, .sidebar2, sidebar3{
+    padding-right: 0;
+}
+       
+
 
 .header{
     grid-area: header;
@@ -282,7 +289,7 @@ p {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
         grid-template-areas:
             "header header header header"
             "sidebar sidebar sidebar content"
@@ -294,7 +301,7 @@ p {
     .grid-alone {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
         grid-template-areas:
             "header header header header"
             "sidebar sidebar sidebar content"
@@ -306,7 +313,7 @@ p {
     .grid-coffee {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
         grid-template-areas:
             "header header header header"
             "sidebar sidebar sidebar content"
@@ -318,7 +325,7 @@ p {
     .grid-ingroup {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
         grid-template-areas:
             "header header header header"
             "sidebar sidebar sidebar content"
@@ -327,17 +334,8 @@ p {
             "footer footer footer footer";
     }
 
-    .sidebar,
-    .sidebar3{
-        padding-left: 20%;
-    }
-
-    .sidebar2 {
+    .sidebar, .sidebar2, .sidebar3 {
         padding-right: 20%;
-    }
-
-    .sidebar, sidebar2, sidebar3 {
-
     }
 
 }
