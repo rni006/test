@@ -118,7 +118,7 @@ input[type=checkbox]:checked ~ #menu{
 
 /* Dan-kun font*/
 
-h1 {
+h2 {
     font-family: 'manaspaceregular';
     font-size: 2em;
     margin: 1.5em;
