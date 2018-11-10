@@ -56,7 +56,7 @@ li:hover ul a {
 /*Hover state for dropdown links*/
 li:hover ul a:hover {
     background: #E7E0D8
-;
+        ;
     color: #573C33;
 }
 /*Hide dropdown links until they are needed*/
@@ -184,34 +184,41 @@ p {
 
 .header{
     grid-area: header;
-    padding-bottom: 9em;
+    padding-bottom: 5.5em;
+    background-color: #573C33;
 }
 
 .sidebar{
     grid-area: sidebar;
     color: #E7E0D8;
+    background-color: #573C33;
 }
 
 .content{
     grid-area: content;
+    background-color: #573C33;
 }
 
 .sidebar2{
     grid-area: sidebar2;
     color: #573C33;
+    background-color: #E7E0D8;
 }  
 
 .content2{
     grid-area: content2;
+    background-color: #E7E0D8;
 }
 
 .sidebar3{
     grid-area: sidebar3;
     color: #E7E0D8;
+    background-color: #573C33;
 }
 
 .content3{
     grid-area: content3;
+    background-color: #573C33;
 }
 
 .sidebar,
@@ -233,17 +240,16 @@ p {
     grid-area: footer;
     text-align: center;
     color: #573C33;
+    background-color: #E7E0D8;
 }
 
 
 .grid div:nth-child(1){
-    background-color:#573C33
-;
+    background-color:#573C33;
 }
 
 .grid div:nth-child(2){
-    background-color:#573C33
-;
+    background-color:#573C33;
 }
 .grid div:nth-child(3){
     background-color:#573C33;
@@ -258,13 +264,11 @@ p {
 }
 
 .grid div:nth-child(6){
-    background-color:#573C33
-;
+    background-color:#573C33;
 }
 
 .grid div:nth-child(7){
-    background-color:#573C33
-;
+    background-color:#573C33;
 }
 
 
@@ -278,7 +282,43 @@ p {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-rows: auto fr 1fr 1fr;
+        grid-template-areas:
+            "header header header header"
+            "sidebar sidebar sidebar content"
+            "content2 sidebar2 sidebar2 sidebar2"
+            "sidebar3 sidebar3 sidebar3 content3"
+            "footer footer footer footer";
+    }
+
+    .grid-alone {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto fr 1fr 1fr;
+        grid-template-areas:
+            "header header header header"
+            "sidebar sidebar sidebar content"
+            "content2 sidebar2 sidebar2 sidebar2"
+            "sidebar3 sidebar3 sidebar3 content3"
+            "footer footer footer footer";
+    }
+
+    .grid-coffee {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto fr 1fr 1fr;
+        grid-template-areas:
+            "header header header header"
+            "sidebar sidebar sidebar content"
+            "content2 sidebar2 sidebar2 sidebar2"
+            "sidebar3 sidebar3 sidebar3 content3"
+            "footer footer footer footer";
+    }
+
+    .grid-ingroup {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto fr 1fr 1fr;
         grid-template-areas:
             "header header header header"
             "sidebar sidebar sidebar content"
@@ -312,7 +352,7 @@ img.even {
 img.odd {
     height: 300px;
     background-color: #573C33
-;
+        ;
     border-radius: 50%;
     margin: 5em;
 }
