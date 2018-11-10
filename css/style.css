@@ -96,6 +96,7 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
+
 /*Responsive Styles*/
 @media screen and (max-width : 736px){
     /*Make dropdown links appear inline*/
@@ -165,7 +166,7 @@ p {
     font-style: normal;
 }
 
-/* THIS is HOW ITS GONna LOOK ON THE PHONE */ 
+/* RESPONSIVENESS STYLE (MOBILE GRID VERSION) MAIN PAGE */ 
 
 .grid{
     display: grid;
@@ -183,12 +184,12 @@ p {
 
 }
 
+/* MAIN PAGE  AND ABOUT PAGE STYLING */
+
 .sidebar, .sidebar2, sidebar3{
     padding-right: 0;
 }
        
-
-
 .header{
     grid-area: header;
     padding-bottom: 5.5em;
@@ -242,45 +243,11 @@ p {
     justify-items: start;
 }
 
-
 .footer{
     grid-area: footer;
     text-align: center;
     color: #573C33;
     background-color: #E7E0D8;
-}
-
-
-.grid div:nth-child(1){
-    background-color:#573C33;
-}
-
-.grid div:nth-child(2){
-    background-color:#573C33;
-}
-.grid div:nth-child(3){
-    background-color:#573C33;
-}
-
-.grid div:nth-child(4){
-    background-color: #E7E0D8;
-}
-
-.grid div:nth-child(5){
-    background-color: #E7E0D8;
-}
-
-.grid div:nth-child(6){
-    background-color:#573C33;
-}
-
-.grid div:nth-child(7){
-    background-color:#573C33;
-}
-
-
-.grid div:nth-child(8){
-    background-color:#E7E0D8;
 }
 
 /* THIs is HOW ITS GONna LOOK ON THE BIG SCREEN */
@@ -333,6 +300,7 @@ p {
             "sidebar3 sidebar3 sidebar3 content3"
             "footer footer footer footer";
     }
+
 
     .sidebar, .sidebar2, .sidebar3 {
         padding-right: 20%;
