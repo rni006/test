@@ -189,7 +189,7 @@ p {
 .sidebar, .sidebar2, sidebar3{
     padding-right: 0;
 }
-       
+
 .header{
     grid-area: header;
     padding-bottom: 5.5em;
@@ -301,11 +301,9 @@ p {
             "footer footer footer footer";
     }
 
-
     .sidebar, .sidebar2, .sidebar3 {
         padding-right: 20%;
     }
-
 }
 
 img.even {
@@ -317,10 +315,11 @@ img.even {
 
 img.odd {
     height: 300px;
-    background-color: #573C33
-        ;
+    background-color: #573C33;
     border-radius: 50%;
     margin: 5em;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 main {
