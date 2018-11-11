@@ -4,7 +4,7 @@ body{
     font-family: 'orange_kidregular';
 }
 
-/* Navigation styles start */
+/* NAV BAR STYLE*/
 
 ul {
     list-style-type:none;
@@ -12,7 +12,7 @@ ul {
     padding:0;
     position: absolute;
 }
-/*Position the nagivation bar on the right */
+/* NAVIGATION POSITION */
 #menu {
     position: absolute;
     top: 0;
@@ -22,14 +22,13 @@ ul {
     box-shadow: 5px 5px 5px 5px;
 }
 
-/*Create a horizontal list with spacing*/
+/* HORIZONTAL LIST AND SPACING */
 li {
     display: inline-block;
-    float: left;
     margin-right: 1px;
 }
 
-/*Style for menu links*/
+/* NAVIGATION LINK STYLE */
 li a {
     display:block;
     min-width:140px;
@@ -41,44 +40,43 @@ li a {
     background: #573C33;
     text-decoration: none;
 }
-/*Hover state for top level links*/
+/* HOVER STATE */
 li:hover a {
     background: #E7E0D8;
     color: #573C33;
 }
-/*Style for dropdown links*/
+/* DROP DOWN LINK STYLE*/
 li:hover ul a {
     background: #573C33;
     color: #E7E0D8;
     height: 40px;
     line-height: 40px;
 }
-/*Hover state for dropdown links*/
+/* HOVER FOR DROP DOWN LINKS*/
 li:hover ul a:hover {
-    background: #E7E0D8
-        ;
+    background: #E7E0D8;
     color: #573C33;
 }
-/*Hide dropdown links until they are needed*/
+/* HIDE DROP DOWN LINKS UNTIL NEEDED*/
 li ul {
     display: none;
 }
-/*Make dropdown links vertical*/
+/* DROP DOWN LINKS VERTICAL */
 li ul li {
     display: block;
     float: none;
 }
-/*Prevent text wrapping*/
+/* NO TEXT WRAPPING */
 li ul li a {
     width: auto;
     min-width: 100px;
     padding: 0 20px;
 }
-/*Display the dropdown on hover*/
+/* DISPLAY DROP DOWN WHEN HOVER */
 ul li a:hover + .hidden, .hidden:hover {
     display: block;
 }
-/*Style 'show menu' label button and hide it by default*/
+/* STYLE FOR MENU BUTTON */
 .show-menu {
     font-family: 'orange_kidregular';
     text-decoration: none;
@@ -88,37 +86,36 @@ ul li a:hover + .hidden, .hidden:hover {
     padding: 10px 0;
     display: none;
 }
-/*Hide checkbox*/
+/* HIDE CHECKBOX */
 input[type=checkbox]{
     display: none;
 }
-/*Show menu when invisible checkbox is checked*/
+/* SHOW MENU WHEN ITS CLICKED ON */
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
-/*Responsive Styles*/
+/* RESPOINSIVE STYLES */
 @media screen and (max-width : 736px){
-    /*Make dropdown links appear inline*/
+    /* INLINE DROP DOWN LINKS */
     ul {
         position: static;
         display: none;
     }
-    /*Create vertical spacing*/
+    /* SPACING */
     li {
         margin-bottom: 1px;
     }
-    /*Make all menu links full width*/
+    /* WIDTH FOR THE LINKS */
     ul li, li a {
         width: 100%;
     }
-    /*Display 'show menu' link*/
+    /* DISPLAY MENU LINK */
     .show-menu {
         display:block;
     }
 }
 
-/* Dan-kun font*/
 
 h2 {
     font-family: 'manaspaceregular';
@@ -131,6 +128,8 @@ p {
     font-size: 1.5em;
     margin: 2em;
 }
+
+/* FONTS */
 
 @font-face {
     font-family: 'manaspaceregular';
@@ -166,7 +165,7 @@ p {
     font-style: normal;
 }
 
-/* RESPONSIVENESS STYLE (MOBILE GRID VERSION) MAIN PAGE */ 
+/* RESPONSIVENESS STYLE (MOBILE GRID VERSION) HOME PAGE AND ABOUT PAGE */ 
 
 .grid{
     display: grid;
@@ -183,12 +182,31 @@ p {
         "footer footer footer footer"; 
 
 }
+/* RESPONSIVENESS STYLE (MOBILE GRID VERSION) FOR COFFEE PAGE */
 
-/* MAIN PAGE  AND ABOUT PAGE STYLING */
+.grid-coffee{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto 1fr 1fr auto; /* auto fits the content */
+    grid-template-areas: 
+        "header header"
+        "title title"
+        "coffee1 coffee1"
+        "coffee2 coffee2"
+        "coffee3 coffee3"
+        "coffee4 coffee4"
+        "coffee5 coffee5"
+        "coffee6 coffee6"
+        "footer footer"; 
 
-.sidebar, .sidebar2, sidebar3{
+}
+
+/* HOME PAGE AND ABOUT PAGE STYLING */
+
+.sidebar, .sidebar2, .sidebar3{
     padding-right: 0;
 }
+
 
 .header{
     grid-area: header;
@@ -196,11 +214,15 @@ p {
     background-color: #573C33;
 }
 
+/* SIDEBAR IS FOR THE CONTENT ON THE LEFT */
+
 .sidebar{
     grid-area: sidebar;
     color: #E7E0D8;
     background-color: #573C33;
 }
+
+/* CONTENT IS FOR ALL THE CONTENT ON THE RIGHT  */
 
 .content{
     grid-area: content;
@@ -243,6 +265,80 @@ p {
     justify-items: start;
 }
 
+/* COFFEE PAGE STYILING */
+
+.title-coffee{
+    grid-area: title;
+    color: #E7E0D8;
+    background-color: #573C33;
+    text-align: center;
+}
+
+.coffee1{
+    grid-area: coffee1;
+    color: #E7E0D8;
+    background-color: #573C33;
+    text-align: center;
+}  
+
+.coffee2{
+    grid-area: coffee2;
+    color: #E7E0D8;
+    background-color: #573C33;
+    text-align: center;
+}  
+
+.coffee3{
+    grid-area: coffee3;
+    color: #E7E0D8;
+    background-color: #573C33;
+    text-align: center;
+}
+
+.coffee4{
+    grid-area: coffee4;
+    color: #E7E0D8;
+    background-color: #573C33;
+    text-align: center;
+}
+
+.coffee5{
+    grid-area: coffee5;
+    color: #E7E0D8;
+    background-color: #573C33;
+    text-align: center;
+}  
+
+.coffee6{
+    grid-area: coffee6;
+    color: #E7E0D8;
+    background-color: #573C33;
+    text-align: center;
+}  
+
+/* STYLING FOR THE COFFEE CONTENT */
+
+.coffee-name{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.coffee{
+    margin: 0;
+    padding: 0;
+}
+
+.coffee-icon{
+    padding-bottom: 0;
+}
+
+.hearts{
+    margin-bottom: 2em;
+}
+
+/* END OF COFFEE STYLING */
+
 .footer{
     grid-area: footer;
     text-align: center;
@@ -279,14 +375,15 @@ p {
 
     .grid-coffee {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
         grid-template-areas:
-            "header header header header"
-            "sidebar sidebar sidebar content"
-            "content2 sidebar2 sidebar2 sidebar2"
-            "sidebar3 sidebar3 sidebar3 content3"
-            "footer footer footer footer";
+            "header header"
+            "title title"
+            "coffee1 coffee2"
+            "coffee3 coffee4"
+            "coffee5 coffee6"
+            "footer footer";
     }
 
     .grid-ingroup {
@@ -320,5 +417,3 @@ img.odd {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
-
-/* Gallery */
