@@ -396,6 +396,17 @@ p {
             "footer footer";
     }
 
+    .grid-contact-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header header"
+            "sidebar sidebar sidebar sidebar"
+            "content content content content"
+            "footer footer footer footer";
+    }
+
 
     .sidebar, .sidebar2, .sidebar3 {
         padding-right: 20%;
@@ -420,5 +431,36 @@ img.odd {
 
 img.study {
     margin: 2em;
+}
+
+/* contact us */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #573C33;
+    color: #E7E0D8;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3e2b24;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #E7E0D8;
+    padding: 20px;
+    width: 100vw;
 }
 
