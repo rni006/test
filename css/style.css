@@ -295,8 +295,8 @@ p {
         grid-template-rows: auto 1fr 1fr 1fr;
         grid-template-areas:
             "header header header header"
-            "sidebar sidebar sidebar content"
-            "content2 sidebar2 sidebar2 sidebar2"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar2 sidebar2 sidebar2 sidebar2"
             "footer footer footer footer";
     }
 
@@ -321,7 +321,4 @@ img.odd {
     transform: scaleX(-1);
 }
 
-main {
-    padding-left: 25%;
-    padding-right: 25%;
-}
+/* Gallery */

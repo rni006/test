@@ -6,6 +6,16 @@
         <title>Assignment 8</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+
+        <!-- Gallery script -->
+
+        <script>
+            function image(i){
+                document.getElementById("bigImage").src = i;
+            }
+
+        </script>
+
     </head>
 
     <body>
@@ -39,36 +49,27 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius gravida nulla sollicitudin malesuada. Donec consectetur commodo urna in ultrices. Phasellus egestas, enim quis faucibus elementum, sapien neque varius orci, non placerat massa tellus nec nibh. Phasellus dapibus et massa dapibus pretium. Integer vel quam malesuada, egestas leo vel, molestie neque. Pellentesque rhoncus tellus sed mi eleifend, a pellentesque nisl rhoncus. Cras in nibh magna.
                 </p>
-                <p>
-                    Nulla sem orci, venenatis eget augue ut, aliquet ornare enim. Integer dignissim quis nunc ut egestas. Donec tempor quis lectus eu ultrices. In pulvinar lectus vitae neque scelerisque ultrices. Mauris eu ipsum vitae erat luctus venenatis quis tincidunt risus. In id diam hendrerit diam pulvinar tempor sed id dolor. Quisque fermentum eros posuere mi aliquam finibus. Morbi sem risus, convallis vitae blandit vel, condimentum nec velit. Nam id dignissim mauris. Integer euismod odio sed lectus maximus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus hendrerit ipsum non aliquam. Fusce eleifend at quam sed malesuada. Maecenas pulvinar nunc dui, et commodo ligula dignissim egestas.                
-                </p>
-
-                <p>
-                    Morbi at faucibus ante. Aliquam posuere tempor neque, at suscipit leo finibus ac. Duis rutrum, turpis id commodo blandit, sapien orci venenatis tortor, vel hendrerit orci sem vitae massa. Integer sollicitudin ex vitae malesuada suscipit. Donec pulvinar arcu risus, et lobortis erat euismod ut. Donec maximus aliquet lacus, quis porttitor libero. Aliquam erat volutpat.
-                </p>
-            </div>
-
-            <div class="content">
-                <img class="even" src="https://66.media.tumblr.com/1cf7a19ae7be52f061ecf4fdc42f4dd9/tumblr_o83trcjq761snc5kxo1_r1_500.png">
-            </div>    
+            </div> 
 
             <div class="sidebar2">
-                <h2>Middle</h2>
-                <p>
-                    Whether you have assignments with deadlines coming up or have tons of books to read; coffee shops are student's best friend. Finding one that fits your needs is however very important before you decide where to go. Coffee shops with calm, relaxing and quiet enviroments are recommended when studying, especially if you need silence to focus on your readings. On our page called "?" you can read about where to go if such a place is what you are looking for!
-                </p>
-            </div>
+                <h2>Gallery</h2>
+                
+                <img src="1.jpg" id="bigImage">
 
-            <div class="content2">
-                <img class="odd" src="https://66.media.tumblr.com/1cf7a19ae7be52f061ecf4fdc42f4dd9/tumblr_o83trcjq761snc5kxo1_r1_500.png">
-            </div>   
+                <section>
+                    <img src="images/1.jpg" class="thumbnail" onClick="image('images/1.jpg')">
+                    <img src="images/2.jpg" class="thumbnail" onClick="image('images/2.jpg')">
+                    <img src="images/3.jpg" class="thumbnail" onClick="image('images/3.jpg')">
+                    <img src="images/4.jpg" class="thumbnail" onClick="image('images/4.jpg')">
+                </section>
+            </div>
 
             <div class="footer">
                 <p>© CDR</p>
             </div>
 
-        </div>
 
+        </div>
     </body>
 
 </html>
