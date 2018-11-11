@@ -18,7 +18,7 @@ ul {
     top: 0;
     width: 100%;
     background-color: #3e2b24;
-    color: #3e2b24;
+    color: #573C33;
     box-shadow: 5px 5px 5px 5px;
 }
 
@@ -371,7 +371,7 @@ p {
             "footer footer footer footer";
     }
 
-    .grid-alone {
+    .grid-study {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto 1fr 1fr 1fr;
@@ -396,16 +396,6 @@ p {
             "footer footer";
     }
 
-    .grid-ingroup {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
-        grid-template-areas:
-            "header header header header"
-            "sidebar sidebar sidebar sidebar"
-            "sidebar2 sidebar2 sidebar2 sidebar2"
-            "footer footer footer footer";
-    }
 
     .sidebar, .sidebar2, .sidebar3 {
         padding-right: 20%;
@@ -427,3 +417,8 @@ img.odd {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
+img.study {
+    margin: 2em;
+}
+
