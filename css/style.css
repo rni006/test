@@ -17,8 +17,8 @@ ul {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: #573C33;
-    color: #573C33;
+    background-color: #3e2b24;
+    color: #3e2b24;
     box-shadow: 5px 5px 5px 5px;
 }
 
@@ -37,7 +37,7 @@ li a {
     line-height: 50px;
     font-family: 'orange_kidregular';
     color: #E7E0D8;
-    background: #573C33;
+    background: #3e2b24;
     text-decoration: none;
 }
 /* HOVER STATE */
@@ -47,7 +47,7 @@ li:hover a {
 }
 /* DROP DOWN LINK STYLE*/
 li:hover ul a {
-    background: #573C33;
+    background: #3e2b24;
     color: #E7E0D8;
     height: 40px;
     line-height: 40px;
@@ -114,6 +114,12 @@ input[type=checkbox]:checked ~ #menu{
     .show-menu {
         display:block;
     }
+}
+
+h1{
+    font-family: 'manaspaceregular';
+    font-size: 2.5em;
+    margin: 1.5em;
 }
 
 
