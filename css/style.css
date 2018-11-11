@@ -117,6 +117,8 @@ input[type=checkbox]:checked ~ #menu{
     }
 }
 
+/* TEXT SIZE AND THEIR FONTS */
+
 h1{
     font-family: 'manaspaceregular';
     font-size: 2.5em;
@@ -189,6 +191,23 @@ p {
         "footer footer footer footer"; 
 
 }
+
+
+.grid-study {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar sidebar"
+        "content content"
+        "sidebar2 sidebar2"
+        "content2 content2"
+        "sidebar3 sidebar3"
+        "content3 content3"
+        "footer footer";
+}
+
 /* RESPONSIVENESS STYLE (MOBILE GRID VERSION) FOR COFFEE PAGE */
 
 .grid-coffee{
@@ -206,6 +225,21 @@ p {
         "coffee6 coffee6"
         "footer footer"; 
 
+}
+
+
+
+
+/* RESPONSIVENESS STYLE FOR CONTANT US PAGE - STILL NOT FULLY DONE */
+.grid-contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "sidebar sidebar sidebar sidebar"
+        "content content content content"
+        "footer footer footer footer";
 }
 
 /* HOME PAGE AND ABOUT PAGE STYLING */
@@ -357,7 +391,27 @@ p {
     background-color: #E7E0D8;
 }
 
-/* THIs is HOW ITS GONna LOOK ON THE BIG SCREEN */
+img.even {
+    height: 300px;
+    background-color: #E7E0D8;
+    border-radius: 50%;
+    margin: 5em;
+}
+
+img.odd {
+    height: 300px;
+    background-color: #573C33;
+    border-radius: 50%;
+    margin: 5em;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+img.study {
+    margin: 2em;
+}
+
+/* THIS IS HOW ITS GONNNA LOOK ON THE BIG SCREEN */
 
 @media screen and (min-width: 736px){
     .grid {
@@ -374,14 +428,14 @@ p {
 
     .grid-study {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr 1fr 1fr;
         grid-template-areas:
-            "header header header header"
-            "sidebar sidebar sidebar content"
-            "content2 sidebar2 sidebar2 sidebar2"
-            "sidebar3 sidebar3 sidebar3 content3"
-            "footer footer footer footer";
+            "header header"
+            "sidebar content"
+            "content2 sidebar2"
+            "sidebar3  content3"
+            "footer footer";
     }
 
     .grid-coffee {
@@ -407,29 +461,9 @@ p {
             "footer footer footer footer";
     }
 
-    .sidebar, .sidebar2, .sidebar3 {
+    /* .sidebar, .sidebar2, .sidebar3 {
         padding-right: 20%;
-    }
-}
-
-img.even {
-    height: 300px;
-    background-color: #E7E0D8;
-    border-radius: 50%;
-    margin: 5em;
-}
-
-img.odd {
-    height: 300px;
-    background-color: #573C33;
-    border-radius: 50%;
-    margin: 5em;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-img.study {
-    margin: 2em;
+    } */
 }
 
 /* contact us */
