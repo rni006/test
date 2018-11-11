@@ -322,3 +322,11 @@ img.odd {
 }
 
 /* Gallery */
+
+#bigImage{
+    width:50%;
+}
+.thumbnail{
+    width: 200px;
+    margin: 20px;
+}
