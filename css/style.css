@@ -403,11 +403,9 @@ p {
         grid-template-rows: auto 1fr 1fr 1fr;
         grid-template-areas:
             "header header header header"
-            "sidebar sidebar sidebar sidebar"
-            "content content content content"
+            "content sidebar sidebar sidebar"
             "footer footer footer footer";
     }
-
 
     .sidebar, .sidebar2, .sidebar3 {
         padding-right: 20%;
@@ -446,7 +444,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #573C33;
+    background-color: #3e2b24;
     color: #E7E0D8;
     padding: 12px 20px;
     border: none;
@@ -455,13 +453,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #3e2b24;
+    background: #E7E0D8;
+    color: #573C33;
 }
 
 .container {
-    border-radius: 5px;
-    background-color: #E7E0D8;
+    background-color: #573C33;
     padding: 20px;
-    width: 100vw;
+    color: #E7E0D8;
 }
 
