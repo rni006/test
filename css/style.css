@@ -287,6 +287,10 @@ p {
     text-align: center;
 }  
 
+#espresso{
+    padding-top: 1em;
+}
+
 .coffee2{
     grid-area: coffee2;
     color: #E7E0D8;
