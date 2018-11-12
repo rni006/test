@@ -142,10 +142,16 @@ h2 {
     margin: 1.5em;
 }
 
-p {
+p.even {
     font-family: 'orange_kidregular';
     font-size: 1.5em;
-    margin: 2em;
+    width: 55%;
+}
+
+p.odd {
+    font-family: 'orange_kidregular';
+    font-size: 1.5em;
+    width: 55%;
 }
 
 /* FONTS. Code by student cand. 163 */
@@ -294,7 +300,7 @@ p {
 .sidebar2,
 .sidebar3{
     align-content: center;
-    margin:0;
+    margin: 0;
     width: 100%;
 }
 
