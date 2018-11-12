@@ -501,6 +501,8 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-family: 'orange_kidregular';
+    font-size: 16px;
 }
 
 input[type=submit] {
