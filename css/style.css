@@ -14,7 +14,7 @@ ul {
 }
 /* NAVIGATION POSITION */
 #menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: #3e2b24;
@@ -46,6 +46,13 @@ li:hover a {
     background: #E7E0D8;
     color: #573C33;
 }
+
+/* SHOWS WHICH PAGE IS CURRENTLY OPENED */ 
+ul li.current a{
+    background: #E7E0D8;
+    color: #573C33;
+}
+
 /* DROP DOWN LINK STYLE*/
 li:hover ul a {
     background: #3e2b24;
@@ -80,9 +87,10 @@ ul li a:hover + .hidden, .hidden:hover {
 /* STYLE FOR MENU BUTTON */
 .show-menu {
     font-family: 'orange_kidregular';
+    font-size: 22px;
     text-decoration: none;
     color:#E7E0D8;
-    background: lightsalmon;
+    background: #3e2b24;
     text-align: center;
     padding: 10px 0;
     display: none;
@@ -179,7 +187,7 @@ p {
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: auto 1fr 1fr 1fr auto; /* auto fits the content */
+    grid-template-rows: auto auto auto auto auto; /* auto fits the content */
     grid-template-areas: 
         "header header header header"
         "sidebar sidebar sidebar sidebar"
@@ -233,13 +241,13 @@ p {
 /* RESPONSIVENESS STYLE FOR CONTANT US PAGE - STILL NOT FULLY DONE */
 .grid-contact-us {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        "header header header header"
-        "sidebar sidebar sidebar sidebar"
-        "content content content content"
-        "footer footer footer footer";
+        "header header"
+        "sidebar sidebar"
+        "content content"
+        "footer footer";
 }
 
 /* HOME PAGE AND ABOUT PAGE STYLING */
@@ -395,14 +403,17 @@ img.even {
     height: 300px;
     background-color: #E7E0D8;
     border-radius: 50%;
-    margin: 5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 img.odd {
     height: 300px;
     background-color: #573C33;
     border-radius: 50%;
-    margin: 5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    justify-items: center;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -453,12 +464,12 @@ img.study {
 
     .grid-contact-us {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
         grid-template-areas:
-            "header header header header"
-            "content sidebar sidebar sidebar"
-            "footer footer footer footer";
+            "header header"
+            "content sidebar"
+            "footer footer";
     }
 
     /* .sidebar, .sidebar2, .sidebar3 {
