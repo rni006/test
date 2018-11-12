@@ -1,6 +1,7 @@
 body{
     margin:0;
     font-family: 'orange_kidregular';
+    background-color: #E7E0D8
 }
 
 /* NAV BAR STYLE*/
@@ -20,6 +21,7 @@ ul {
     color: rgba(0, 0, 0, 0.0);
     box-shadow: 5px 5px 5px 5px;
     font-size: 22px;
+    z-index: 1;
 }
 
 /* HORIZONTAL LIST AND SPACING */
@@ -421,6 +423,12 @@ img.odd {
     width: 100%;
     /* background-color: #573C33;
     border-radius: 50%; */
+}
+
+img#silent {
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    z-index: 0;
 }
 
 img.study {
