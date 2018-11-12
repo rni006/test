@@ -204,15 +204,13 @@ p {
 .grid-study {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header"
         "sidebar sidebar"
         "content content"
         "sidebar2 sidebar2"
         "content2 content2"
-        "sidebar3 sidebar3"
-        "content3 content3"
         "footer footer";
 }
 
@@ -400,24 +398,33 @@ p {
 }
 
 img.even {
-    height: 300px;
-    width: 300px;
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     background-color: #E7E0D8;
     border-radius: 50%;
-    margin: 5em;
 }
 
 img.odd {
-    height: 300px;
-    width: 300px;
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     background-color: #573C33;
     border-radius: 50%;
-    margin: 5em;
-
 }
 
 img.study {
-    margin: 2em;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 /* THIS IS HOW ITS GONNNA LOOK ON THE BIG SCREEN */
@@ -438,12 +445,11 @@ img.study {
     .grid-study {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr auto;
         grid-template-areas:
             "header header"
             "sidebar content"
             "content2 sidebar2"
-            "sidebar3  content3"
             "footer footer";
     }
 
