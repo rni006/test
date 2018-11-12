@@ -18,7 +18,7 @@ ul {
     top: 0;
     width: 100%;
     background-color: #3e2b24;
-    color: #573C33;
+    color: rgba(0, 0, 0, 0.0);
     box-shadow: 5px 5px 5px 5px;
     font-size: 22px;
 }
