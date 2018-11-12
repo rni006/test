@@ -400,21 +400,19 @@ p {
 }
 
 img.even {
-    height: 75%;
-    width: 75%;
+    height: 300px;
+    width: 300px;
     background-color: #E7E0D8;
     border-radius: 50%;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin: 5em;
 }
 
 img.odd {
-    height: 75%;
-    width: 75%;
+    height: 300px;
+    width: 300px;
     background-color: #573C33;
     border-radius: 50%;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin: 5em;
 
 }
 
