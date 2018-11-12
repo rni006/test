@@ -142,15 +142,17 @@ h2 {
     margin: 1.5em;
 }
 
-p.even {
+p{
     font-family: 'orange_kidregular';
     font-size: 1.5em;
+    margin: 2em;
+}
+
+p.even {
     width: 55%;
 }
 
 p.odd {
-    font-family: 'orange_kidregular';
-    font-size: 1.5em;
     width: 55%;
 }
 
