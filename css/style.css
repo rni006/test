@@ -149,11 +149,11 @@ p{
 }
 
 p.even {
-    width: 55%;
+    width: auto;
 }
 
 p.odd {
-    width: 55%;
+    width: auto;
 }
 
 /* FONTS. Code by student cand. 163 */
@@ -499,6 +499,15 @@ img.study {
     img.study {
         width: 80%;
     }
+
+    p.even {
+        width: 55%;
+    }
+    
+    p.odd {
+        width: 55%;
+    }
+    
 }
 
 /* CONTACT FORM. Made by student cand. 163 */
