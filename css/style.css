@@ -394,17 +394,33 @@ p {
     background-color: #E7E0D8;
 }
 
+.footer p{
+    margin: 1em;;
+}
 /* END OF FOOTER */
 
 /* IMAGE PLACEMENTS AND STYLING. Code by student cand. 163 */
 
-img.home, img.avatar {
+img.even {
     display: block;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    /* background-color: #E7E0D8;
+    border-radius: 50%; */
+}
+
+img.odd {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* background-color: #573C33;
+    border-radius: 50%; */
 }
 
 img.study {
@@ -413,11 +429,6 @@ img.study {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-}
-
-img#silent {
-    transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
 }
 
 /* END OF IMAGE PLACEMENTS */
