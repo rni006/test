@@ -1,4 +1,3 @@
-
 body{
     margin:0;
     font-family: 'orange_kidregular';
@@ -125,7 +124,7 @@ input[type=checkbox]:checked ~ #menu{
     }
 }
 
-/* TEXT SIZE AND THEIR FONTS */
+/* TEXT SIZE AND THEIR FONTS. Code by student cand. 163 */
 
 h1{
     font-family: 'manaspaceregular';
@@ -146,7 +145,7 @@ p {
     margin: 2em;
 }
 
-/* FONTS */
+/* FONTS. Code by student cand. 163 */
 
 @font-face {
     font-family: 'manaspaceregular';
@@ -154,22 +153,12 @@ p {
         url('../fonts/manaspc-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'manaspaceregular';
     src: url('../fonts/manaspc-webfont.woff2') format('woff2'),
         url('../fonts/manaspc-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'lunchtime_doubly_soregular';
-    src: url('../fonts/lunchds-webfont.woff2') format('woff2'),
-        url('../fonts/lunchds-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -390,12 +379,18 @@ p {
 
 /* END OF COFFEE STYLING */
 
+/* FOOTER. Code by student cand. 163 */
+
 .footer{
     grid-area: footer;
     text-align: center;
     color: #573C33;
     background-color: #E7E0D8;
 }
+
+/* END OF FOOTER */
+
+/* IMAGE PLACEMENTS AND STYLING. Code by student cand. 163 */
 
 img.even {
     display: block;
@@ -426,6 +421,8 @@ img.study {
     margin-right: auto;
     width: 80%;
 }
+
+/* END OF IMAGE PLACEMENTS */
 
 /* THIS IS HOW ITS GONNNA LOOK ON THE BIG SCREEN */
 
@@ -481,7 +478,7 @@ img.study {
     } */
 }
 
-/* contact us */
+/* CONTACT FORM. Made by student cand. 163 */
 
 input[type=text], select, textarea {
     width: 100%;
