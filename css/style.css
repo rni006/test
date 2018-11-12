@@ -22,6 +22,7 @@ ul {
     box-shadow: 5px 5px 5px 5px;
     font-size: 22px;
     z-index: 1;
+    box-shadow: 0px 5px 5px -5px #000000;
 }
 
 /* HORIZONTAL LIST AND SPACING */
@@ -521,4 +522,3 @@ input[type=submit]:hover {
     padding: 20px;
     color: #E7E0D8;
 }
-
