@@ -204,15 +204,13 @@ p {
 .grid-study {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header"
         "sidebar sidebar"
         "content content"
         "sidebar2 sidebar2"
         "content2 content2"
-        "sidebar3 sidebar3"
-        "content3 content3"
         "footer footer";
 }
 
@@ -234,9 +232,6 @@ p {
         "footer footer"; 
 
 }
-
-
-
 
 /* RESPONSIVENESS STYLE FOR CONTANT US PAGE - STILL NOT FULLY DONE */
 .grid-contact-us {
@@ -417,7 +412,13 @@ img.odd {
 }
 
 img.study {
-    margin: 2em;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 80%;
+    height: auto;
 }
 
 /* THIS IS HOW ITS GONNNA LOOK ON THE BIG SCREEN */
@@ -438,12 +439,11 @@ img.study {
     .grid-study {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
         grid-template-areas:
             "header header"
             "sidebar content"
             "content2 sidebar2"
-            "sidebar3  content3"
             "footer footer";
     }
 
@@ -473,6 +473,7 @@ img.study {
     /* .sidebar, .sidebar2, .sidebar3 {
         padding-right: 20%;
     } */
+
 }
 
 /* contact us */
