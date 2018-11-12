@@ -404,22 +404,13 @@ p {
 
 /* IMAGE PLACEMENTS AND STYLING. Code by student cand. 163 */
 
-img.even {
+img.home {
     display: block;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-}
-
-img.odd {
-    display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    width: 75%;
 }
 
 img#silent {
