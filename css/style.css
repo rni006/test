@@ -233,7 +233,7 @@ p {
     grid-template-areas:
         "header header"
         "sidebar sidebar"
-        "content content"
+        "container container"
         "footer footer";
 }
 
@@ -292,6 +292,7 @@ p {
 .sidebar3{
     align-content: center;
     margin:0;
+    width: 100%;
 }
 
 .content,
@@ -299,6 +300,7 @@ p {
 .content3{
     margin: 0;
     justify-items: start;
+    width: 100%;
 }
 
 /* COFFEE PAGE STYILING */
@@ -379,6 +381,10 @@ p {
 
 /* END OF COFFEE STYLING */
 
+.container{
+    grid-area: container;
+}
+
 /* FOOTER. Code by student cand. 163 */
 
 .footer{
@@ -430,7 +436,7 @@ img.study {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr auto;
         grid-template-areas:
             "header header header header"
             "sidebar sidebar sidebar content"
@@ -469,7 +475,7 @@ img.study {
         grid-template-rows: auto 1fr auto;
         grid-template-areas:
             "header header"
-            "content sidebar"
+            "container sidebar"
             "footer footer";
     }
 }
