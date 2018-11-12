@@ -20,6 +20,7 @@ ul {
     color: rgba(0, 0, 0, 0.0);
     box-shadow: 5px 5px 5px 5px;
     font-size: 22px;
+    z-index: 1;
 }
 
 /* HORIZONTAL LIST AND SPACING */
@@ -418,6 +419,7 @@ img.study {
 img#silent {
     transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
+    z-index: 0;
 }
 
 /* END OF IMAGE PLACEMENTS */
