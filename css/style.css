@@ -392,26 +392,13 @@ p {
 
 /* IMAGE PLACEMENTS AND STYLING. Code by student cand. 163 */
 
-img.avatar {
+img.home, img.avatar {
     display: block;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    /* background-color: #E7E0D8;
-    border-radius: 50%; */
-}
-
-img.odd {
-    display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    /* background-color: #573C33;
-    border-radius: 50%; */
 }
 
 img.study {
