@@ -410,8 +410,9 @@ img.home {
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 75%;
 }
+
 
 img.avatar {
     display: block;
@@ -419,7 +420,7 @@ img.avatar {
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 75%;
 }
 
 img#silent {
