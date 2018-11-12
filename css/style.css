@@ -410,8 +410,6 @@ img.even {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    /* background-color: #E7E0D8;
-    border-radius: 50%; */
 }
 
 img.odd {
@@ -421,8 +419,6 @@ img.odd {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    /* background-color: #573C33;
-    border-radius: 50%; */
 }
 
 img#silent {
@@ -436,7 +432,7 @@ img.study {
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
 }
 
 /* END OF IMAGE PLACEMENTS */
@@ -488,6 +484,10 @@ img.study {
             "header header"
             "container sidebar"
             "footer footer";
+    }
+
+    img.study {
+        width: 80%;
     }
 }
 
