@@ -377,7 +377,7 @@ p {
     padding-bottom: 0;
 }
 
-.coffee{
+.coffee, .coffee-location{
     margin: 0;
     padding: 0;
 }
