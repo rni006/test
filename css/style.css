@@ -135,7 +135,6 @@ h1{
     margin: 1.5em;
 }
 
-
 h2 {
     font-family: 'manaspaceregular';
     font-size: 2em;
@@ -149,11 +148,11 @@ p{
 }
 
 p.even {
-    width: 55%;
+    width: auto;
 }
 
 p.odd {
-    width: 55%;
+    width: auto;
 }
 
 /* FONTS. Code by student cand. 163 */
@@ -181,8 +180,9 @@ p.odd {
     font-weight: normal;
     font-style: normal;
 }
+/* All responsive grid styles coded by candidate 180 */
 
-/* RESPONSIVENESS STYLE (MOBILE GRID VERSION) HOME PAGE AND ABOUT PAGE */ 
+/* RESPONSIVENESS STYLE (MOBILE GRID VERSION) HOME PAGE AND ABOUT PAGE*/ 
 
 .grid{
     display: grid;
@@ -234,9 +234,7 @@ p.odd {
 }
 
 
-
-
-/* RESPONSIVENESS STYLE FOR CONTANT US PAGE - STILL NOT FULLY DONE */
+/* RESPONSIVENESS STYLE FOR CONTANT US PAGE */
 .grid-contact-us {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -447,6 +445,8 @@ img.study {
 
 /* END OF IMAGE PLACEMENTS */
 
+/* Following @media section coded by candidate 180 */
+
 /* THIS IS HOW ITS GONNNA LOOK ON THE BIG SCREEN */
 
 @media screen and (min-width: 736px){
@@ -499,6 +499,15 @@ img.study {
     img.study {
         width: 80%;
     }
+
+    p.even {
+        width: 55%;
+    }
+    
+    p.odd {
+        width: 55%;
+    }
+    
 }
 
 /* CONTACT FORM. Made by student cand. 163 */
