@@ -147,13 +147,10 @@ p{
     margin: 2em;
 }
 
-p.even {
+p.txt {
     width: auto;
 }
 
-p.odd {
-    width: auto;
-}
 
 /* FONTS. Code by student cand. 163 */
 
@@ -446,7 +443,6 @@ img.study {
 /* END OF IMAGE PLACEMENTS */
 
 /* Following @media section coded by candidate 180 */
-
 /* THIS IS HOW ITS GONNNA LOOK ON THE BIG SCREEN */
 
 @media screen and (min-width: 736px){
@@ -500,11 +496,7 @@ img.study {
         width: 80%;
     }
 
-    p.even {
-        width: 55%;
-    }
-    
-    p.odd {
+    p.txt {
         width: 55%;
     }
     
